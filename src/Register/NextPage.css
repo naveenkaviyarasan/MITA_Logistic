@@ -1,0 +1,164 @@
+/* Main container */
+/* .dashboard-container {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+} */
+
+.dashboard-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Form container card */
+/* .register-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+} */
+
+/* Inputs */
+.big-input,
+.big-textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.big-textarea {
+  resize: none;
+}
+
+/* Section Title */
+.sibling-header {
+  margin-top: 20px;
+}
+
+.sibling-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Image section */
+.sibling-image-wrap {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sibling-image {
+  width: 230px;
+  height: auto;
+}
+
+.sibling-image-caption {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+
+/* Sibling counters grid */
+.siblings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 15px;
+}
+
+.sibling-block {
+  background: #f8f8f8;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+}
+
+.sibling-label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Counter UI */
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter button {
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  border: none;
+  background: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.counter-value {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Two-column rows */
+.row-two {
+  display: flex;
+  gap: 15px;
+}
+
+.col {
+  flex: 1;
+}
+
+.label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Prev / Next Buttons */
+.buttons-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.prev-btn {
+  background: #ddd;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.next-btn {
+  background: #ff8c00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .row-two {
+    flex-direction: column;
+  }
+
+  .siblings-grid {
+    grid-template-columns: 1fr;
+  }
+}

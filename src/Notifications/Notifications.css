@@ -1,0 +1,97 @@
+.notification-container {
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Top Bar */
+.top-bar {
+  /* display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #ffa94d;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-bottom: 40px; */
+
+
+   width: 100% !important;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.back-arrow {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.top-bar h1 {
+  flex-grow: 1;
+  text-align: center;
+  margin-right: 40px;
+}
+
+/* Form */
+.notify-form {
+  width: 70%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.column {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.column label,
+.full-row label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.column input[type="text"],
+.file-input,
+.full-row textarea {
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.file-input {
+  padding: 6px;
+}
+
+.full-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.full-row textarea {
+  height: 140px;
+  resize: none;
+}
+
+/* Submit Button */
+.submit-btn {
+  padding: 10px 40px;
+  background: #f8961e;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  float: right;
+  cursor: pointer;
+  font-weight: bold;
+}
