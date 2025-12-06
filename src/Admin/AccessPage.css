@@ -1,0 +1,110 @@
+/* Main page layout */
+.access-container {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+}
+
+/* Top heading with arrow */
+.header {
+  width: 95%;
+  max-width: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fbc87a;
+  border-radius: 8px;
+  padding: 12px 0;
+  margin-bottom: 50px;
+  background: #fff;
+}
+
+.back-btn {
+  position: absolute;
+  left: 50px;
+  cursor: pointer;
+  font-size: 22px;
+  color: #444;
+}
+
+/* Access box styling */
+.access-box {
+  width: 550px;
+  border: 2px solid #feb436;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  background: #fff;
+}
+
+/* Yellow title header */
+.access-header {
+  background-color: #feb436;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2px solid #feb436;
+  color: #222;
+}
+
+/* Checkbox section grid */
+.access-grid {
+  padding: 25px 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 28px;
+  column-gap: 50px;
+}
+
+/* Each row of text + checkbox */
+.row {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #222;
+}
+
+.row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #09a53e; /* green checkbox */
+  cursor: pointer;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 110px;
+  background: #f7a21a;
+  border: none;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 15px 0 18px 0;
+}
+
+.submit-btn:hover {
+  background: #e08c00;
+}
+
+/* Responsive fix */
+@media (max-width: 600px) {
+  .access-box {
+    width: 90%;
+  }
+  .access-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .back-btn {
+    left: 20px;
+  }
+}

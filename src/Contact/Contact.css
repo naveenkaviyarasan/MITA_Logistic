@@ -1,125 +1,155 @@
-.contact-container {
-  width: 90%;
+/* Main container */
+/* .contact-container {
+  width: 100%;
+  max-width: 1250px;
   margin: auto;
-  font-family: Arial, sans-serif;
-}
+  padding: 20px 0;
+  font-family: sans-serif;
+} */
 
+/* HEADER TOP BAR */
 .top-bar {
+  width: fit-content;
+  margin: 0 auto 40px auto;
+  border: 2px solid #feb436;
+  border-radius: 10px;
+  padding: 14px 70px;
   display: flex;
   align-items: center;
-  gap: 15px;
-  border: 1px solid #ffa94d;
-  padding: 10px 20px;
-  margin-bottom: 30px;
-  border-radius: 6px;
+  position: relative;
+  background: #fff;
+}
+
+.top-bar h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
 }
 
 .back-arrow {
+  position: absolute;
+  left: 20px;
   font-size: 24px;
+  font-weight: 600;
   cursor: pointer;
+  color: #555;
 }
 
-h1 {
-  flex-grow: 1;
-  text-align: center;
-  margin-right: 40px;
-}
-
+/* FORM SECTION */
 .contact-form {
-  margin-bottom: 25px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .form-row {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   margin-bottom: 20px;
-  
 }
 
-.form-item {
+.form-item,
+.form-items {
   flex: 1;
   display: flex;
   flex-direction: column;
-  
 }
 
-.form-items{
-  width: 100% !important;
-  max-width: 31%;
-  /* box-sizing: border-box; */
-  /* padding: 14px; */
-  /* border-radius: 8px; */
-  /* border: 1px solid #ddd; */
-  font-size: 16px;
+.contact-form label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 600;
 }
 
-.form-item label {
-  margin-bottom: 5px;
-  color: #444;
+.contact-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1.5px solid #aaa;
+  border-radius: 4px;
+  outline: none;
 }
 
-.form-item input {
-   width: 100% !important;
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 14px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  font-size: 16px;
+.contact-form input:focus {
+  border-color: #feb436;
 }
 
+/* SUBMIT BUTTON */
 .submit-btn {
   display: block;
-  margin: auto;
-  padding: 10px 25px;
-  background: orange;
+  background: #feb436;
   border: none;
-  border-radius: 5px;
+  padding: 10px 40px;
+  border-radius: 6px;
   cursor: pointer;
-  font-weight: bold;
+  margin: 10px auto 35px auto;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.2s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
 }
 
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* TABLE SECTION */
 .contact-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
 }
 
-.contact-table th {
-  background: orange;
-  color: white;
-  padding: 12px;
+/* Header Style */
+.contact-table thead {
+  background: #feb436;
+  color: #fff;
+  font-weight: 600;
 }
 
-.contact-table td {
-  border: 1px solid #ddd;
-  padding: 10px;
+.contact-table thead th {
+  padding: 10px 0;
+  border-right: 1px solid #fff;
 }
 
+/* Table rows */
+.contact-table tbody tr {
+  border-bottom: 1px solid #ddd;
+  height: 40px;
+}
+
+.contact-table tbody td {
+  border-right: 1px solid #e6e6e6;
+  padding: 6px;
+}
+
+/* Checkbox */
+.contact-table input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* PAGINATION */
 .pagination {
-  /* margin-top: 20px;
   display: flex;
   justify-content: flex-end;
-  gap: 10px; */
-
-  width: 98%;
-  margin: 20px auto;
-  display: flex;
-  justify-content: flex-end;
-  gap: 15px;
   align-items: center;
+  gap: 10px;
+  margin-top: 15px;
 }
 
 .pagination button {
-  /* padding: 6px 12px;
-  border: 1px solid #ccc;
-  background: white;
-  border-radius: 5px;
-  cursor: pointer; */
-
   padding: 6px 18px;
-  border: 1px solid #ffb87a;
-  background: white;
-  border-radius: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.pagination button:hover {
+  background: #f6f6f6;
 }

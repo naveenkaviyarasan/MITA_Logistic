@@ -15,7 +15,7 @@ const SideMenu = () => {
     { title: "Contact Details", icon: "/icons/contact.png", path: "/contact" },
     { title: "Account", icon: "/icons/accounts.png", path: "/accounts" },
     { title: "Help", icon: "/icons/help.png", path: "/help" },
-    { title: "Admin User", icon: "/icons/admin.png", path: "/admin-user" },
+    { title: "Admin", icon: "/icons/admin.png", path: "/admin" },
     { title: "Notifications", icon: "/icons/notify.png", path: "/notifications" },
   ];
 

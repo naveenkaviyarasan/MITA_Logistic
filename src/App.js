@@ -13,6 +13,14 @@ import Contact from "./Contact/Contact";
 import Notifications from "./Notifications/Notifications";
 import Help from "./Help/Help";
 import Accounts from "./Accounts/Accounts";
+import Feedback from "./Feedback/Feedback";
+import Terms from "./Terms/Terms";
+import Today from "./Today/Today";
+import Monthly from "./Monthly/Monthly";
+import Totals from "./Totals/Totals";
+import Admin from "./Admin/Admin";
+import AccessPage from "./Admin/AccessPage";
+
 
 
 
@@ -43,6 +51,13 @@ function App() {
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/help" element={<Help />} />
             <Route path="/accounts" element={<Accounts />} />
+            <Route path="/feedback" element={<Feedback />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/today" element={<Today />} />
+            <Route path="/Monthly" element={<Monthly />} />
+            <Route path="/Totals" element={<Totals />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/AccessPage/:id" element={<AccessPage />} />
 
           </Routes>
         </div>

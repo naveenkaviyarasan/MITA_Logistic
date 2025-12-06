@@ -1,0 +1,163 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Main container */
+.container {
+  padding: 20px 35px;
+}
+
+/* Header Section */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 2px solid #feb436;
+  padding-bottom: 12px;
+  margin-bottom: 35px;
+}
+
+.back-btn {
+  position: absolute;
+  left: 0;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #333;
+  padding-left: 8px;
+}
+
+.header h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Create Role Access */
+.form-section h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  margin-bottom: 28px;
+}
+
+.form-row input {
+  padding: 10px 12px;
+  border: 1.5px solid #d9d9d9;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-row input:focus {
+  border-color: #feb436;
+}
+
+.form-row button {
+  background: #feb436;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form-row button:hover {
+  background: #e59520;
+}
+
+/* Table Section */
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table-section thead {
+  background-color: #feb436;
+  color: #fff;
+}
+
+.table-section th,
+.table-section td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+}
+
+.table-section tr:hover td {
+  background-color: #fff9ef;
+}
+
+/* Eye Icon */
+.view-icon {
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+.view-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding-right: 5px;
+}
+
+.pg-btn {
+  background: #efefef;
+  border: none;
+  outline: none;
+  padding: 6px 18px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pg-btn:hover {
+  background: #dedede;
+}
+
+.header {
+  width: fit-content;
+  min-width: 450px; /* optional — just for good proportion */
+  margin: 0 auto; /* ⬅️ This truly centers the block on page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 12px 55px;
+  border: 2px solid #feb436;
+  border-radius: 10px;
+}
+
+/* Back Button */
+.back-btn {
+  position: absolute;
+  left: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #333;
+}
